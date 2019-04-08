@@ -1,0 +1,335 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{441779E4-163C-44C5-9A2F-800E09F9CF90}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenGL</RootNamespace>
+    <AssemblyName>OpenGL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.94.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.94.2\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.3.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.3\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastMember, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastMember.1.3.0\lib\net45\FastMember.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\font-face.css" />
+    <Content Include="css\modalLogin.css" />
+    <Content Include="css\registro.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\theme.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\bg-title-01.jpg" />
+    <Content Include="images\bg-title-02.jpg" />
+    <Content Include="images\icon\avatar-01.jpg" />
+    <Content Include="images\icon\avatar-02.jpg" />
+    <Content Include="images\icon\avatar-03.jpg" />
+    <Content Include="images\icon\avatar-04.jpg" />
+    <Content Include="images\icon\avatar-05.jpg" />
+    <Content Include="images\icon\avatar-06.jpg" />
+    <Content Include="images\icon\avatar-big-01.jpg" />
+    <Content Include="images\icon\logo-blue.png" />
+    <Content Include="images\icon\logo-mini.png" />
+    <Content Include="images\icon\logo-white.png" />
+    <Content Include="images\icon\logo.png" />
+    <Content Include="images\icon\Untitled-1.jpg" />
+    <Content Include="img\login.jpg" />
+    <Content Include="img\logo-Principal.png" />
+    <Content Include="img\logoHeader.png" />
+    <Content Include="img\modelo1.png" />
+    <Content Include="img\perfilSinFoto.jpg" />
+    <Content Include="js\main.js" />
+    <Content Include="pages\AltaUsuario.aspx" />
+    <Content Include="pages\LogOut.aspx" />
+    <Content Include="pages\Principal.aspx" />
+    <Content Include="pages\PruebasAutomaticas.aspx" />
+    <Content Include="pages\Registro.aspx" />
+    <Content Include="pages\SubaDeArchivo.aspx" />
+    <Content Include="vendor\animsition\animsition.min.css" />
+    <Content Include="vendor\animsition\animsition.min.js" />
+    <Content Include="vendor\bootstrap-4.1\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap-4.1\bootstrap.min.js" />
+    <Content Include="vendor\bootstrap-4.1\popper.min.js" />
+    <Content Include="vendor\bootstrap-progressbar\bootstrap-progressbar-3.3.4.min.css" />
+    <Content Include="vendor\bootstrap-progressbar\bootstrap-progressbar.min.js" />
+    <Content Include="vendor\chartjs\Chart.bundle.min.js" />
+    <Content Include="vendor\circle-progress\circle-progress.js" />
+    <Content Include="vendor\circle-progress\circle-progress.min.js" />
+    <Content Include="vendor\countdown\countdowntime.js" />
+    <Content Include="vendor\countdown\jquery.countdown.min.js" />
+    <Content Include="vendor\countdown\moment-timezone-with-data.min.js" />
+    <Content Include="vendor\countdown\moment-timezone.min.js" />
+    <Content Include="vendor\countdown\moment.min.js" />
+    <Content Include="vendor\counter-up\jquery.counterup.min.js" />
+    <Content Include="vendor\counter-up\jquery.waypoints.min.js" />
+    <Content Include="vendor\counter-up\waypoints.min.js" />
+    <Content Include="vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="vendor\font-awesome-4.7\css\font-awesome.css" />
+    <Content Include="vendor\font-awesome-4.7\css\font-awesome.min.css" />
+    <Content Include="vendor\font-awesome-4.7\fonts\fontawesome-webfont.svg" />
+    <Content Include="vendor\font-awesome-4.7\HELP-US-OUT.txt" />
+    <Content Include="vendor\font-awesome-5\css\fontawesome-all.min.css" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-brands-400.svg" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-regular-400.svg" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-solid-900.svg" />
+    <Content Include="vendor\jquery-3.2.1.min.js" />
+    <Content Include="vendor\jquery-ui.min.js" />
+    <Content Include="vendor\lightbox2\dist\css\lightbox.css" />
+    <Content Include="vendor\lightbox2\dist\images\close.png" />
+    <Content Include="vendor\lightbox2\dist\images\loading.gif" />
+    <Content Include="vendor\lightbox2\dist\images\next.png" />
+    <Content Include="vendor\lightbox2\dist\images\prev.png" />
+    <Content Include="vendor\lightbox2\dist\js\lightbox-plus-jquery.js" />
+    <Content Include="vendor\lightbox2\dist\js\lightbox-plus-jquery.min.js" />
+    <Content Include="vendor\lightbox2\dist\js\lightbox.js" />
+    <Content Include="vendor\lightbox2\dist\js\lightbox.min.js" />
+    <Content Include="vendor\lightbox2\src\css\lightbox.css" />
+    <Content Include="vendor\lightbox2\src\images\close.png" />
+    <Content Include="vendor\lightbox2\src\images\loading.gif" />
+    <Content Include="vendor\lightbox2\src\images\next.png" />
+    <Content Include="vendor\lightbox2\src\images\prev.png" />
+    <Content Include="vendor\lightbox2\src\js\lightbox.js" />
+    <Content Include="vendor\mdi-font\css\material-design-iconic-font.css" />
+    <Content Include="vendor\mdi-font\css\material-design-iconic-font.min.css" />
+    <Content Include="vendor\mdi-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="vendor\perfect-scrollbar\perfect-scrollbar.js" />
+    <Content Include="vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="vendor\progressbar\progressbar.js" />
+    <Content Include="vendor\progressbar\progressbar.min.js" />
+    <Content Include="vendor\select2\select2.min.css" />
+    <Content Include="vendor\select2\select2.min.js" />
+    <Content Include="vendor\slick\ajax-loader.gif" />
+    <Content Include="vendor\slick\fonts\slick.svg" />
+    <Content Include="vendor\slick\slick-theme.css" />
+    <Content Include="vendor\slick\slick.css" />
+    <Content Include="vendor\slick\slick.js" />
+    <Content Include="vendor\slick\slick.min.js" />
+    <Content Include="vendor\smk-accordion\accordion.css" />
+    <Content Include="vendor\smk-accordion\accordion.js" />
+    <Content Include="vendor\smk-accordion\accordion.min.js" />
+    <Content Include="vendor\sweetalert\sweetalert.min.js" />
+    <Content Include="vendor\vector-map\jquery.vmap.brazil.js" />
+    <Content Include="vendor\vector-map\jquery.vmap.europe.js" />
+    <Content Include="vendor\vector-map\jquery.vmap.france.js" />
+    <Content Include="vendor\vector-map\jquery.vmap.germany.js" />
+    <Content Include="vendor\vector-map\jquery.vmap.js" />
+    <Content Include="vendor\vector-map\jquery.vmap.min.js" />
+    <Content Include="vendor\vector-map\jquery.vmap.russia.js" />
+    <Content Include="vendor\vector-map\jquery.vmap.sampledata.js" />
+    <Content Include="vendor\vector-map\jquery.vmap.usa.js" />
+    <Content Include="vendor\vector-map\jquery.vmap.world.js" />
+    <Content Include="vendor\vector-map\jqvmap.min.css" />
+    <Content Include="vendor\wow\animate.css" />
+    <Content Include="vendor\wow\wow.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clases\clsActualizaciones.cs" />
+    <Compile Include="clases\clsUsuario.cs" />
+    <Compile Include="clases\Conexion.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AltaUsuario.aspx.cs">
+      <DependentUpon>AltaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\AltaUsuario.aspx.designer.cs">
+      <DependentUpon>AltaUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Principal.aspx.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Principal.aspx.designer.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\PruebasAutomaticas.aspx.cs">
+      <DependentUpon>PruebasAutomaticas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\PruebasAutomaticas.aspx.designer.cs">
+      <DependentUpon>PruebasAutomaticas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\SubaDeArchivo.aspx.cs">
+      <DependentUpon>SubaDeArchivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\SubaDeArchivo.aspx.designer.cs">
+      <DependentUpon>SubaDeArchivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="vendor\font-awesome-4.7\fonts\fontawesome-webfont.eot" />
+    <Content Include="vendor\font-awesome-4.7\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff" />
+    <Content Include="vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff2" />
+    <Content Include="vendor\font-awesome-4.7\fonts\FontAwesome.otf" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-brands-400.eot" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-brands-400.ttf" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-brands-400.woff" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-brands-400.woff2" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-regular-400.eot" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-regular-400.ttf" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-regular-400.woff" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-regular-400.woff2" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-solid-900.eot" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-solid-900.ttf" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-solid-900.woff" />
+    <Content Include="vendor\font-awesome-5\webfonts\fa-solid-900.woff2" />
+    <Content Include="vendor\lightbox2\dist\js\lightbox-plus-jquery.min.map" />
+    <Content Include="vendor\lightbox2\dist\js\lightbox.min.map" />
+    <Content Include="vendor\mdi-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="vendor\mdi-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="vendor\slick\config.rb" />
+    <Content Include="vendor\slick\fonts\slick.eot" />
+    <Content Include="vendor\slick\fonts\slick.ttf" />
+    <Content Include="vendor\slick\fonts\slick.woff" />
+    <Content Include="vendor\slick\slick-theme.less" />
+    <Content Include="vendor\slick\slick-theme.scss" />
+    <Content Include="vendor\slick\slick.less" />
+    <Content Include="vendor\slick\slick.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52882</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52882/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
